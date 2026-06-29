@@ -8,6 +8,7 @@ body {
 
 .icon {
 	width: 30px;
+	filter: brightness(0) invert(1);
 }
 
 /* Containers */
@@ -19,12 +20,12 @@ body {
 }
 
 .sidebar {
-	padding: 10px;
+	padding: 15px;
 	grid-row: 1 / -1;
 	background-color: #1992d4;
 	display: flex;
 	flex-direction: column;
-	gap: 60px;
+	gap: 40px;
 }
 
 .header {
@@ -51,12 +52,13 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 5fr;
 	align-items: center;
+	column-gap: 10px;
 }
 
 ul {
 	display: grid;
 	grid-template-columns: 1fr 5fr;
-	row-gap: 10px;
+	gap: 10px;
 }
 
 .sidebar img {
@@ -71,7 +73,7 @@ li {
 a, .sidebar p {
 	color: white;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 23px;
 }
  
 .sidebar p {
@@ -105,7 +107,7 @@ input[type="text"]:focus {
 }
 
 button {
-	padding: 13px 40px;
+	padding: 13px 38px;
 	background-color: #1992d4;
 	color: white;
 	font-size: 17px;
@@ -119,6 +121,7 @@ button {
 }
 
 .account-part {
+	margin-right: 10px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -136,17 +139,19 @@ button {
 	gap: 30px;
 }
 
-.greetings a {
+.greetings a, .greetings div > p:last-child {
 	color: black;
-	font-size: 15px;
+	font-size: 27px;
 }
 
 .greetings p {
 	font-weight: bold;
 }
 
-.greetings div > p:last-child {
-	font-size: 20px;
+.greetings div {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
 /* Main Content */

@@ -1,5 +1,24 @@
 @import url(css/reset.css);
 
 body {
-	background-color: antiquewhite;
+	height: 100vh;
+	background-color: #e2e8f0;
+}
+
+/* Containers */
+.main-container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 200px 1fr;
+}
+
+.sidebar {
+	grid-row: 1 / -1;
+	background-color: #1992d4;
+}
+
+.header {
+	background-color: #FFF;
+	box-shadow: -1px 5px 5px rgba(71, 71, 71, 0.478);
 }

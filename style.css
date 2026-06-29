@@ -3,6 +3,7 @@
 body {
 	height: 100vh;
 	background-color: #e2e8f0;
+	font-family: "Roboto";
 }
 
 /* Containers */
@@ -14,6 +15,7 @@ body {
 }
 
 .sidebar {
+	padding: 10px;
 	grid-row: 1 / -1;
 	background-color: #1992d4;
 	display: flex;
@@ -32,19 +34,34 @@ body {
 
 /* Sidebar */
 
+.sidebar div {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	align-items: center;
+}
+
 ul {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	row-gap: 10px;
+}
+
+.sidebar img {
+	justify-self: center;
+	align-self: center;
+    filter: brightness(0) invert(1);
 }
 
 li {
 	padding: 10px;
 }
 
-a {
+a, .sidebar p {
 	color: white;
 	font-weight: bold;
 }
  
+.sidebar p {
+	font-size: 30px;
+}
 /* Header */

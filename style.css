@@ -173,10 +173,11 @@ h1 {
 .right-panels {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	gap: 20px;
 }
 
 .card, .panel {
+	flex: 1;
 	padding: 20px;
 	background-color: white;
 	border-radius: 15px;
@@ -233,4 +234,15 @@ h2 {
 
 hr {
 	background-color: #7e7e7e;
+}
+
+.trend {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.trend-tag {
+	color: black;
+	font-weight: 400;
 }

@@ -15,7 +15,7 @@ body {
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr 4fr;
-	grid-template-rows: 200px 1fr;
+	grid-template-rows: 250px 1fr;
 }
 
 .sidebar {
@@ -35,6 +35,7 @@ body {
 	grid-template-columns: 5fr 3fr;
 	grid-template-rows: 2fr 3fr;
 	align-items: center;
+	gap: 40px;
 }
 
 .main-content {
@@ -106,6 +107,36 @@ button {
 	font-weight: bold;
 	border-radius: 20px;
 	border: none;
+}
+
+.admin-photo {
+	border-radius: 50%;
+}
+
+.account-part {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 100px;
+}
+
+.greetings {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.greetings a {
+	color: black;
+	font-size: 15px;
+}
+
+.greetings p {
+	font-weight: bold;
+}
+
+.greetings div > p:last-child {
+	font-size: 20px;
 }
 
 /* Main Content */
